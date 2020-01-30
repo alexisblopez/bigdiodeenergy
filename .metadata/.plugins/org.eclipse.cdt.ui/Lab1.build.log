@@ -1,0 +1,15 @@
+13:29:52 **** Incremental Build of configuration Debug for project Lab1 ****
+make all 
+Building file: ../Sources/main.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m0plus -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/Jakub/Documents/GitHub/bigdiodeenergy/Lab1/Static_Code/PDD" -I"C:/Users/Jakub/Documents/GitHub/bigdiodeenergy/Lab1/Static_Code/IO_Map" -I"C:/Users/Jakub/Documents/GitHub/bigdiodeenergy/Lab1/Sources" -I"C:/Users/Jakub/Documents/GitHub/bigdiodeenergy/Lab1/Generated_Code" -std=c99 -MMD -MP -MF"Sources/main.d" -MT"Sources/main.o" -c -o "Sources/main.o" "../Sources/main.c"
+Finished building: ../Sources/main.c
+ 
+Building target: Lab1.elf
+Invoking: Cross ARM C++ Linker
+arm-none-eabi-g++ -mcpu=cortex-m0plus -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T "C:/Users/Jakub/Documents/GitHub/bigdiodeenergy/Lab1/Project_Settings/Linker_Files/ProcessorExpert.ld" -Xlinker --gc-sections -L"C:/Users/Jakub/Documents/GitHub/bigdiodeenergy/Lab1/Project_Settings/Linker_Files" -Wl,-Map,"Lab1.map" -specs=nano.specs -specs=nosys.specs -o "Lab1.elf"  ./Sources/Events.o ./Sources/main.o  ./Project_Settings/Startup_Code/startup.o  ./Generated_Code/Cpu.o ./Generated_Code/EXTERNAL_LED.o ./Generated_Code/LED_Red.o ./Generated_Code/PE_LDD.o ./Generated_Code/Vectors.o   
+Finished building target: Lab1.elf
+ 
+
+13:29:54 Build Finished (took 1s.638ms)
+
