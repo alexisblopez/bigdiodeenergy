@@ -6,7 +6,7 @@
 **     Version     : Component 01.025, Driver 01.04, CPU db: 3.00.000
 **     Repository  : Kinetis
 **     Compiler    : GNU C Compiler
-**     Date/Time   : 2020-01-30, 13:11, # CodeGen: 2
+**     Date/Time   : 2020-01-30, 13:45, # CodeGen: 3
 **     Abstract    :
 **
 **     Settings    :
@@ -63,6 +63,8 @@
 #include "PE_Const.h"
 #include "LED_Red.h"
 #include "EXTERNAL_LED.h"
+#include "AD1.h"
+#include "AdcLdd1.h"
 
 
 /*

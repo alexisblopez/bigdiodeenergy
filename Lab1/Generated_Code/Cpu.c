@@ -8,7 +8,7 @@
 **     Repository  : Kinetis
 **     Datasheet   : KL25P80M48SF0RM, Rev.3, Sep 2012
 **     Compiler    : GNU C Compiler
-**     Date/Time   : 2020-01-30, 13:11, # CodeGen: 2
+**     Date/Time   : 2020-01-30, 13:45, # CodeGen: 3
 **     Abstract    :
 **
 **     Settings    :
@@ -245,6 +245,8 @@
 /* {Default RTOS Adapter} No RTOS includes */
 #include "LED_Red.h"
 #include "EXTERNAL_LED.h"
+#include "AD1.h"
+#include "AdcLdd1.h"
 #include "PE_Types.h"
 #include "PE_Error.h"
 #include "PE_Const.h"
@@ -310,8 +312,10 @@ void __init_hardware(void)
   /* System clock initialization */
   /* SIM_CLKDIV1: OUTDIV1=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,OUTDIV4=3,??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0,??=0 */
   SIM_CLKDIV1 = (SIM_CLKDIV1_OUTDIV1(0x00) | SIM_CLKDIV1_OUTDIV4(0x03)); /* Set the system prescalers to safe value */
-  /* SIM_SCGC5: PORTB=1,PORTA=1 */
-  SIM_SCGC5 |= (SIM_SCGC5_PORTB_MASK | SIM_SCGC5_PORTA_MASK); /* Enable clock gate for ports to enable pin routing */
+  /* SIM_SCGC5: PORTE=1,PORTB=1,PORTA=1 */
+  SIM_SCGC5 |= SIM_SCGC5_PORTE_MASK |
+               SIM_SCGC5_PORTB_MASK |
+               SIM_SCGC5_PORTA_MASK;   /* Enable clock gate for ports to enable pin routing */
   if ((PMC_REGSC & PMC_REGSC_ACKISO_MASK) != 0x0U) {
     /* PMC_REGSC: ACKISO=1 */
     PMC_REGSC |= PMC_REGSC_ACKISO_MASK; /* Release IO pads after wakeup from VLLS mode. */
@@ -425,6 +429,8 @@ void PE_low_level_init(void)
   (void)LED_Red_Init(NULL);
   /* ### BitIO_LDD "EXTERNAL_LED" component auto initialization. Auto initialization feature can be disabled by component property "Auto initialization". */
   (void)EXTERNAL_LED_Init(NULL);
+  /* ### ADC "AD1" init code ... */
+  AD1_Init();
   __EI();
 }
   /* Flash configuration field */

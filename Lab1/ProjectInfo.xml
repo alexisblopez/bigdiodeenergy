@@ -50,6 +50,8 @@
   </PATHS>
   <FILES>
     <GeneratedCs>
+      <PathName>C:\Users\Jakub\Documents\GitHub\bigdiodeenergy\Lab1\Generated_Code\AD1.c</PathName>
+      <PathName>C:\Users\Jakub\Documents\GitHub\bigdiodeenergy\Lab1\Generated_Code\AdcLdd1.c</PathName>
       <PathName>C:\Users\Jakub\Documents\GitHub\bigdiodeenergy\Lab1\Generated_Code\Cpu.c</PathName>
       <PathName>C:\Users\Jakub\Documents\GitHub\bigdiodeenergy\Lab1\Generated_Code\EXTERNAL_LED.c</PathName>
       <PathName>C:\Users\Jakub\Documents\GitHub\bigdiodeenergy\Lab1\Generated_Code\LED_Red.c</PathName>
@@ -60,6 +62,8 @@
       <PathName>C:\Users\Jakub\Documents\GitHub\bigdiodeenergy\Lab1\Sources\main.c</PathName>
     </GeneratedCs>
     <GeneratedHs>
+      <PathName>C:\Users\Jakub\Documents\GitHub\bigdiodeenergy\Lab1\Generated_Code\AD1.h</PathName>
+      <PathName>C:\Users\Jakub\Documents\GitHub\bigdiodeenergy\Lab1\Generated_Code\AdcLdd1.h</PathName>
       <PathName>C:\Users\Jakub\Documents\GitHub\bigdiodeenergy\Lab1\Generated_Code\Cpu.h</PathName>
       <PathName>C:\Users\Jakub\Documents\GitHub\bigdiodeenergy\Lab1\Generated_Code\EXTERNAL_LED.h</PathName>
       <PathName>C:\Users\Jakub\Documents\GitHub\bigdiodeenergy\Lab1\Generated_Code\IO_Map.h</PathName>
