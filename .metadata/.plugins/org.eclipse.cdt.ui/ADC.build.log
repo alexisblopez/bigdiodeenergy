@@ -1,0 +1,21 @@
+11:42:06 **** Incremental Build of configuration Debug for project ADC ****
+make all 
+Building file: ../Sources/main.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m0plus -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"C:/Users/Jakub/Documents/GitHub/bigdiodeenergy/ADC/Static_Code/PDD" -I"C:/Users/Jakub/Documents/GitHub/bigdiodeenergy/ADC/Static_Code/IO_Map" -I"C:/Users/Jakub/Documents/GitHub/bigdiodeenergy/ADC/Sources" -I"C:/Users/Jakub/Documents/GitHub/bigdiodeenergy/ADC/Generated_Code" -std=c99 -MMD -MP -MF"Sources/main.d" -MT"Sources/main.o" -c -o "Sources/main.o" "../Sources/main.c"
+../Sources/main.c: In function 'main':
+../Sources/main.c:60:27: error: 'value' undeclared (first use in this function)
+    (void) AD1_GetValue16(&value);
+                           ^
+../Sources/main.c:60:27: note: each undeclared identifier is reported only once for each function it appears in
+../Sources/main.c:62:4: error: 'msg' undeclared (first use in this function)
+    msg[5] = ((value)%10)+48;
+    ^
+../Sources/main.c:69:8: error: 'TimerIntFlag' undeclared (first use in this function)
+    if (TimerIntFlag==1)
+        ^
+Sources/subdir.mk:21: recipe for target 'Sources/main.o' failed
+make: *** [Sources/main.o] Error 1
+
+11:42:06 Build Finished (took 868ms)
+

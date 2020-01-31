@@ -30,6 +30,13 @@
 /* Including needed modules to compile this module/procedure */
 #include "Cpu.h"
 #include "Events.h"
+#include "AD1.h"
+#include "AdcLdd1.h"
+#include "TI1.h"
+#include "TimerIntLdd1.h"
+#include "TU1.h"
+#include "AS1.h"
+#include "ASerialLdd1.h"
 /* Including shared modules, which are used for whole project */
 #include "PE_Types.h"
 #include "PE_Error.h"
@@ -47,7 +54,31 @@ int main(void)
   PE_low_level_init();
   /*** End of Processor Expert internal initialization.                    ***/
 
-  AD1_Measure();
+
+  for (;;) {
+	  (void) AD1_Measure(1);
+	  (void) AD1_GetValue16(&value);
+
+	  msg[5] = ((value)%10)+48;
+	  msg[4] = ((value/10)%10+48);
+	  msg[3] = ((value/100)%10+48);
+	  msg[2] = ((value/1000)%10+48);
+	  msg[1] = ((value/10000)%10+48);
+	  msg[0] = '-';
+
+	  if (TimerIntFlag==1)
+	  {
+		  AS1_SendChar(msg[1]);
+		  AS1_SendChar(msg[2]);
+		  AS1_SendChar(msg[3]);
+		  AS1_SendChar(msg[4]);
+		  AS1_SendChar(msg[5]);
+		  AS1_SendChar('-');
+
+		  TimerIntFlag=0;
+	  }
+  }
+
 
 
   /* Write your code here */

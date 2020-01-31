@@ -50,20 +50,34 @@
   </PATHS>
   <FILES>
     <GeneratedCs>
+      <PathName>C:\Users\Jakub\Documents\GitHub\bigdiodeenergy\ADC\Generated_Code\AD1.c</PathName>
+      <PathName>C:\Users\Jakub\Documents\GitHub\bigdiodeenergy\ADC\Generated_Code\AS1.c</PathName>
+      <PathName>C:\Users\Jakub\Documents\GitHub\bigdiodeenergy\ADC\Generated_Code\ASerialLdd1.c</PathName>
+      <PathName>C:\Users\Jakub\Documents\GitHub\bigdiodeenergy\ADC\Generated_Code\AdcLdd1.c</PathName>
       <PathName>C:\Users\Jakub\Documents\GitHub\bigdiodeenergy\ADC\Generated_Code\Cpu.c</PathName>
       <PathName>C:\Users\Jakub\Documents\GitHub\bigdiodeenergy\ADC\Generated_Code\PE_LDD.c</PathName>
+      <PathName>C:\Users\Jakub\Documents\GitHub\bigdiodeenergy\ADC\Generated_Code\TI1.c</PathName>
+      <PathName>C:\Users\Jakub\Documents\GitHub\bigdiodeenergy\ADC\Generated_Code\TU1.c</PathName>
+      <PathName>C:\Users\Jakub\Documents\GitHub\bigdiodeenergy\ADC\Generated_Code\TimerIntLdd1.c</PathName>
       <PathName>C:\Users\Jakub\Documents\GitHub\bigdiodeenergy\ADC\Generated_Code\Vectors.c</PathName>
       <PathName>C:\Users\Jakub\Documents\GitHub\bigdiodeenergy\ADC\Project_Settings\Startup_Code\startup.c</PathName>
       <PathName>C:\Users\Jakub\Documents\GitHub\bigdiodeenergy\ADC\Sources\Events.c</PathName>
       <PathName>C:\Users\Jakub\Documents\GitHub\bigdiodeenergy\ADC\Sources\main.c</PathName>
     </GeneratedCs>
     <GeneratedHs>
+      <PathName>C:\Users\Jakub\Documents\GitHub\bigdiodeenergy\ADC\Generated_Code\AD1.h</PathName>
+      <PathName>C:\Users\Jakub\Documents\GitHub\bigdiodeenergy\ADC\Generated_Code\AS1.h</PathName>
+      <PathName>C:\Users\Jakub\Documents\GitHub\bigdiodeenergy\ADC\Generated_Code\ASerialLdd1.h</PathName>
+      <PathName>C:\Users\Jakub\Documents\GitHub\bigdiodeenergy\ADC\Generated_Code\AdcLdd1.h</PathName>
       <PathName>C:\Users\Jakub\Documents\GitHub\bigdiodeenergy\ADC\Generated_Code\Cpu.h</PathName>
       <PathName>C:\Users\Jakub\Documents\GitHub\bigdiodeenergy\ADC\Generated_Code\IO_Map.h</PathName>
       <PathName>C:\Users\Jakub\Documents\GitHub\bigdiodeenergy\ADC\Generated_Code\PE_Const.h</PathName>
       <PathName>C:\Users\Jakub\Documents\GitHub\bigdiodeenergy\ADC\Generated_Code\PE_Error.h</PathName>
       <PathName>C:\Users\Jakub\Documents\GitHub\bigdiodeenergy\ADC\Generated_Code\PE_LDD.h</PathName>
       <PathName>C:\Users\Jakub\Documents\GitHub\bigdiodeenergy\ADC\Generated_Code\PE_Types.h</PathName>
+      <PathName>C:\Users\Jakub\Documents\GitHub\bigdiodeenergy\ADC\Generated_Code\TI1.h</PathName>
+      <PathName>C:\Users\Jakub\Documents\GitHub\bigdiodeenergy\ADC\Generated_Code\TU1.h</PathName>
+      <PathName>C:\Users\Jakub\Documents\GitHub\bigdiodeenergy\ADC\Generated_Code\TimerIntLdd1.h</PathName>
       <PathName>C:\Users\Jakub\Documents\GitHub\bigdiodeenergy\ADC\Sources\Events.h</PathName>
       <PathName>C:\Users\Jakub\Documents\GitHub\bigdiodeenergy\ADC\Static_Code\IO_Map\MKL25Z4.h</PathName>
       <PathName>C:\Users\Jakub\Documents\GitHub\bigdiodeenergy\ADC\Static_Code\PDD\ADC_PDD.h</PathName>
